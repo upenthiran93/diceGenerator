@@ -1,20 +1,25 @@
 .Main-container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100VH;
 
+background-color: #FF9130;;
 }
 .header{
-    grid-column: 2/6;
+    grid-column: 3/5;
     grid-row: 1/1;
-    background-color: #ee4a4a;
+    color: aliceblue;
     text-align: center;
     padding: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #FF9130;
 }
 .content{
-    grid-column: 2/6;
-    grid-row: 2/8;
+    grid-column: 3/5;
+    grid-row: 2/3;
 
-    background-color: #0259ff;
+
     padding: 20px;
 }
 .content_dice{
@@ -27,11 +32,27 @@
 padding: 50px;
 
 }
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 #roll{
     width: 200px;
     height: 100px;
     border-radius: 40px;
 }
-.foot{
-background-color: aqua;
+button{
+    color: aliceblue;
+    font-size: x-large;
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: transparent;
+    border: 5px solid aliceblue;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: aliceblue;
+    color: #FF9130;
 }
